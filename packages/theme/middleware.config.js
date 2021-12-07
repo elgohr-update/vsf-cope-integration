@@ -1,8 +1,12 @@
 module.exports = {
   integrations: {
-    <% INTEGRATION %>: {
-      location: '@vue-storefront/<% INTEGRATION %>-api/server',
-      configuration: {}
+    cope: {
+      location: 'cope-api/server',
+      configuration: {
+        api: {
+          url: 'http://es.cope.lo0'
+        }
+      }
     }
   }
 };

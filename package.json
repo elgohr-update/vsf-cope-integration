@@ -1,5 +1,5 @@
 {
-  "name": "ecommerce-<% INTEGRATION %>-integration",
+  "name": "vsf-cope-integration",
   "private": true,
   "license": "MIT",
   "engines": {

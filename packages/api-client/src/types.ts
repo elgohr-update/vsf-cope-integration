@@ -1,6 +1,10 @@
 export type TODO = unknown;
 
-export type Setttings = TODO;
+export type Setttings = {
+  api: {
+    url: string;
+  }
+};
 
 export type Endpoints = TODO;
 
@@ -10,7 +14,12 @@ export type Cart = TODO;
 
 export type CartItem = TODO;
 
-export type Category = TODO;
+export type Category = {
+  path: string;
+  category_id: number;
+  name: string;
+  slug: string;
+};
 
 export type Coupon = TODO;
 
@@ -24,7 +33,41 @@ export type OrderItem = TODO;
 
 export type PasswordResetResult = TODO;
 
-export type Product = TODO;
+export type ProductMedia = {
+  image: string;
+  pos: number;
+  typ: string;
+};
+
+export type Product = {
+  id: number;
+  sku: string;
+  name: string;
+  attribute_set_id: number;
+  price: number;
+  status: number;
+  visibility: number;
+  type_id: string;
+  created_at: string;
+  final_price: number;
+  regular_price: number;
+  description: string;
+  image: string;
+  small_image: string;
+  thumbnail: string;
+  tax_class_id: string;
+  category_ids: number[];
+  url_key: string;
+  new: string;
+  slug: string;
+  stock: {
+    qty_increments: number;
+    is_in_stock: boolean;
+  },
+  media_gallery: ProductMedia[];
+  category: Category[];
+  url_path: string;
+};
 
 export type ProductFilter = TODO;
 

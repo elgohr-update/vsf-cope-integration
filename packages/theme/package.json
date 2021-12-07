@@ -1,5 +1,5 @@
 {
-  "name": "@vue-storefront/<% INTEGRATION %>-theme",
+  "name": "@vue-storefront/cope-theme",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -24,12 +24,12 @@
     "@vue-storefront/middleware": "~2.4.5",
     "@vue-storefront/nuxt": "~2.4.5",
     "@vue-storefront/nuxt-theme": "~2.4.5",
-    "@vue-storefront/<% INTEGRATION %>": "0.0.1",
     "cookie-universal-nuxt": "^2.1.5",
     "core-js": "^3.19.0",
     "nuxt": "^2.15.8",
     "nuxt-i18n": "^6.5.0",
     "vee-validate": "^3.4.13",
+    "vsf-cope-integration": "blvz/vsf-cope-integration",
     "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
